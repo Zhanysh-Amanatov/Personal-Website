@@ -4,6 +4,7 @@ import { Container } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/material";
 import { Link } from "@mui/material";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#f2f2f2",
@@ -92,7 +93,7 @@ export default function Footer() {
                 </Link>
               </Box>
               <Box>
-                <Link href="/" className={classes.link}>
+                <Link href="https://github.com/Zhanysh-Amanatov/personal_website" className={classes.link}>
                   Source code
                 </Link>
               </Box>
