@@ -28,7 +28,13 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: "1",
     cursor: "pointer",
     marginLeft: "30px",
-    letterSpacing:"2px"
+    letterSpacing:"2px",
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: "1.2rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.1rem",
+    },
   },
   colorLastName: {
     color: "#20bf6b",

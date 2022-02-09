@@ -18,13 +18,26 @@ const useStyles = makeStyles((theme) => ({
   },
   fullName: {
     color: "#fff",
-    fontSize:"2.4rem"
+    fontSize:"2.4rem",
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: "2.3rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "2.2rem",
+    },
   },
   colorLastName: {
     color: "#20bf6b",
   },
   description: {
     color: "#fff",
+    fontSize:"2rem",
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: "1.9rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.8rem",
+    },
   },
   socialmedia: {
     marginTop: "10px",
