@@ -3,7 +3,7 @@ import { CssBaseline, makeStyles } from "@material-ui/core";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
-import { Background } from "./components/Background";
+// import { Background } from "./components/Background";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 const useStyles = makeStyles((theme) => ({

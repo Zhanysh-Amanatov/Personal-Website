@@ -5,6 +5,9 @@ import { Grid } from "@mui/material";
 import projects from "../static/projects";
 
 const useStyles = makeStyles((theme) => ({
+  root:{
+   marginTop:"175px"
+  },
   gridContainer: {
     padding:"40px"
   },
@@ -18,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Portfolio() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="projects">
       <h1 className={classes.heading}>Projects</h1>
       <Grid
         container
@@ -40,4 +43,3 @@ export default function Portfolio() {
   );
 }
 
-//project={projects[0]}

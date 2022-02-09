@@ -60,6 +60,7 @@ const DrawerComponent = () => {
               <Scroll
                 to="aboutMe"
                 smooth="true"
+                offset={-200}
                 className={classes.link}
                 onClick={() => setOpenDrawer(false)}
               >
@@ -76,6 +77,7 @@ const DrawerComponent = () => {
               <Scroll
                 to="projects"
                 smooth="true"
+                offset={-60}
                 className={classes.link}
                 onClick={() => setOpenDrawer(false)}
               >

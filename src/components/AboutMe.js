@@ -8,11 +8,10 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flexStart",
     fontSize: "1.6rem",
     textAlign:"start",
-    //background:'#fff', //Should make the white Background!!!
     paddingLeft:"20px",
     paddingRight:"20px",
     fontFamily: "Inconsolata",
-    color:"#fff"
+    color:"#fff",
   },
   text: {
    marginTop:"-10px",
@@ -21,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export default function AboutMe() {
   const classes = useStyles();
   return (
-    <div className={classes.root} id='aboutMe'>
+    <div className={classes.root} id='aboutMe' >
       <h3 className={classes.hey}>
         Hey!
       </h3>

@@ -3,7 +3,6 @@ import {
   CssBaseline,
   Toolbar,
   Typography,
-  Button,
   makeStyles,
   useTheme,
   useMediaQuery,
@@ -62,17 +61,19 @@ const Header = () => {
     <AppBar position="sticky" className={classes.root}>
       <CssBaseline />
       <Toolbar>
-        <Typography variant="h4" className={classes.logo} to="home">
+        <Typography variant="h4" className={classes.logo}>
+        <Scroll to="home" smooth="true" offset={-100}>
           Zhanysh <span className={classes.colorLastName}>Amanatov</span>
+          </Scroll>
         </Typography>
         {isMobile ? (
           <DrawerComponent />
         ) : (
           <div className={classes.navLinks}>
-            <Scroll to="aboutMe" smooth="true" className={classes.link}>
+            <Scroll to="aboutMe" smooth="true" offset={-200} className={classes.link}>
               About me
             </Scroll>
-            <Scroll to="projects" smooth="true" className={classes.link}>
+            <Scroll to="projects" smooth="true" offset={-60} className={classes.link}>
               Projects
             </Scroll>
             <a  href="https://docs.google.com/document/d/1lo19nl2NjHGps5QOEdu7bWTpKHHSKn46ip1IaOC_vbI/edit?usp=sharing&resourcekey=0-r6sQiosa0tTJE0iVNrrikw" target='_blank' rel='noopener noreferrer' className={classes.link}>

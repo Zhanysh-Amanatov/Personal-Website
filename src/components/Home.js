@@ -5,7 +5,6 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import TelegramIcon from "@material-ui/icons/Telegram";
-import {Background} from './Background'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
   arrowDown: {
     color: "#20bf6b",
     fontSize: "4rem",
+    "&:hover": {
+      color: "green",
+    },
     [theme.breakpoints.between("xs", "sm")]: {
       fontSize: "3.5rem",
     },
@@ -61,7 +63,7 @@ const Home = () => {
 
   return (
     <div className={classes.root} id="home">
-      <div className={classes.fullName} to="home">
+      <div className={classes.fullName}>
         Zhanysh <span className={classes.colorLastName}>Amanatov</span>
       </div>
       <Collapse
@@ -93,7 +95,7 @@ const Home = () => {
             <TelegramIcon className={classes.link} />
           </a>
         </div>
-        <Scroll to="aboutMe" smooth={true}>
+        <Scroll to="aboutMe" smooth={true} offset={-200}>
           <IconButton>
             <ExpandMoreIcon className={classes.arrowDown} />
           </IconButton>

@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/material";
-import { Link } from "@mui/material";
+ import { Link } from "@mui/material";
+import { Link as Scroll } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
   link: {
     textDecoration: "none",
     color:"#000",
+    cursor:"pointer",
   },
   logo: {
     textAlign: "center",
@@ -53,7 +55,6 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   href="mailto:amanatov.zhanysh22@gmail.com"
-                  className={classes.link}
                 >
                   Gmail
                 </Link>
@@ -63,7 +64,6 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   href="https://t.me/zhanyshamanatov"
-                  className={classes.link}
                 >
                   Telegram
                 </Link>
@@ -73,7 +73,6 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/Zhanysh-Amanatov"
-                  className={classes.link}
                 >
                   GitHub
                 </Link>
@@ -83,17 +82,17 @@ export default function Footer() {
             <Grid item xs={12} sm={6}>
               <Box className={classes.header}>Site Map</Box>
               <Box>
-                <Link href="aboutMe" className={classes.link}>
+                <Scroll to="aboutMe" smooth="true" offset={-200} className={classes.link}>
                   About Me
-                </Link>
+                </Scroll>
               </Box>
               <Box>
-                <Link href="/projects" className={classes.link}>
+                <Scroll to="projects" smooth="true" offset={-60}  className={classes.link}>
                   Projects
-                </Link>
+                </Scroll>
               </Box>
               <Box>
-                <Link href="https://github.com/Zhanysh-Amanatov/personal_website" className={classes.link}>
+                <Link href="https://github.com/Zhanysh-Amanatov/personal_website">
                   Source code
                 </Link>
               </Box>
