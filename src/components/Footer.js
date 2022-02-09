@@ -31,6 +31,13 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     textAlign: "center",
     paddingTop: "30px",
+    fontSize: "1.3rem",
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: "1.2rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+    },
   },
   colorLastName:{
     color: "#20bf6b",
@@ -98,7 +105,7 @@ export default function Footer() {
               </Box>
             </Grid>
             <Box className={classes.logo}>
-              Zhanysh <span className={classes.colorLastName}>Amanatov</span>{" "}
+              Zhanysh <span className={classes.colorLastName}>Amanatov</span> 
               &reg; 2021-{new Date().getFullYear()}
             </Box>
           </Grid>
