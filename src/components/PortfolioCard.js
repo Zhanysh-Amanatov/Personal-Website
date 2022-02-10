@@ -6,6 +6,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+// import { useNavigate } from "react-router-dom";
+import {Link } from "react-router-dom"
+
 
 const useStyles = makeStyles({
   root: {
@@ -18,12 +21,25 @@ const useStyles = makeStyles({
 
 export default function PortfolioCard({projects}) {
   const classes = useStyles();
+  // const  navigate = useNavigate(); 
+  // const routeChange = () =>{ 
+  //  let path = projects.live; 
+  //   navigate(path);
+  // }
+  const liveHandle = e => {
+    e.preventDefault()
+    window.location.assign(projects.live)
+  }
+  const codeHandle = e => {
+    e.preventDefault()
+    window.location.assign(projects.code)
+  }
   return (
     <Card className={classes.root} >
       <div>
         <CardMedia
          component="img"
-          height="140"
+          height="250"
           image={projects.imageUrl}
         />
         <CardContent>
@@ -35,8 +51,8 @@ export default function PortfolioCard({projects}) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Visit website</Button>
-          <Button size="small">GitHub</Button>
+          <Button size="small" target="_blank" onClick={liveHandle}>Live</Button>
+          <Button size="small" onClick={codeHandle}>Code</Button>
         </CardActions>
       </div>
     </Card>
