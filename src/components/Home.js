@@ -81,7 +81,7 @@ const Home = () => {
       </div>
       <Collapse
         in={checked}
-        {...(checked ? { timeout: 1500 } : {})}
+        {...(checked ? { timeout: 1200 } : {})}
         collapsedSize={1}
       >
         <div className={classes.description}>Frontend Developer</div>

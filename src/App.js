@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <div className={classes.root}>
-      {/* <Background /> */}
+       {/* <div><Background /></div> */}
       <CssBaseline />
       <Header />
       <Home />
