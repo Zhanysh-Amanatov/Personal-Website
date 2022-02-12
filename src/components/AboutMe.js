@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight:"20px",
     fontFamily: "Inconsolata",
     color:"#fff",
+    paddingBottom:"150px"
   },
   text: {
    marginTop:"-10px",

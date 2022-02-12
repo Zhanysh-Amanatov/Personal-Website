@@ -6,7 +6,6 @@ import projects from "../static/projects";
 
 const useStyles = makeStyles((theme) => ({
   root:{
-   marginTop:"175px"
   },
   gridContainer: {
     padding:"40px"
