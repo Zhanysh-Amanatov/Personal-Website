@@ -105,8 +105,8 @@ export default function Footer() {
               </Box>
             </Grid>
             <Box className={classes.logo}>
-              Zhanysh <span className={classes.colorLastName}>Amanatov</span> 
-              &reg; 2021-{new Date().getFullYear()}
+            &#169; 2021-{new Date().getFullYear()} Zhanysh <span className={classes.colorLastName}>Amanatov</span> 
+                
             </Box>
           </Grid>
         </Container>
