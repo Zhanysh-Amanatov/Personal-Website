@@ -61,15 +61,6 @@ export default function Footer() {
                 <Link
                   target="_blank"
                   rel="noreferrer"
-                  href="mailto:amanatov.zhanysh22@gmail.com"
-                >
-                  Gmail
-                </Link>
-              </Box>
-              <Box>
-                <Link
-                  target="_blank"
-                  rel="noreferrer"
                   href="https://t.me/zhanyshamanatov"
                 >
                   Telegram
@@ -82,6 +73,15 @@ export default function Footer() {
                   href="https://github.com/Zhanysh-Amanatov"
                 >
                   GitHub
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  target="_blank"
+                  rel="noreferrer"
+                  href="mailto:amanatov.zhanysh22@gmail.com"
+                >
+                  amanatov.zhanysh22@gmail.com
                 </Link>
               </Box>
             </Grid>
