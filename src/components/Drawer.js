@@ -92,7 +92,8 @@ const DrawerComponent = () => {
             </ListItemIcon>
             <ListItemText>
               <a
-                href="https://docs.google.com/document/d/1lo19nl2NjHGps5QOEdu7bWTpKHHSKn46ip1IaOC_vbI/edit?usp=sharing&resourcekey=0-r6sQiosa0tTJE0iVNrrikw"
+                href="/" 
+                //https://docs.google.com/document/d/1lo19nl2NjHGps5QOEdu7bWTpKHHSKn46ip1IaOC_vbI/edit?usp=sharing&resourcekey=0-r6sQiosa0tTJE0iVNrrikw
                 target="_blank"
                 rel="noopener noreferrer"
                 className={classes.link}
