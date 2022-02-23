@@ -1,5 +1,5 @@
 # Zhanysh Amanatov's personal website
-* LIVE http://zhanysh.ml
+* LIVE https://zhanysh.ml
 <img width="1390" alt="Screen Shot 2022-02-11 at 04 43 50" src="https://user-images.githubusercontent.com/85785542/153509826-3261ca5c-ebcc-4521-8902-92093f06cc20.png">
 
 # Technologies used:
