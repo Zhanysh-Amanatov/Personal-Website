@@ -27,11 +27,14 @@ export default function AboutMe() {
       </h3>
       <p className={classes.text}>
         I'm Zhanysh Amanatov.<br />
-        I like programming, and learning new things!
-        <br />
-        Aim to be a Fullstack Engineer.
+        21 years old.Self taught developer.<br />
+        My stack:<br />
+        <b>React</b>(Middle)<br/>
+        <b>Redux</b><br/>
+        <b>Material UI</b><br/>
+        <b>Saas</b><br/>
+        In all projects the Frontend part has been done.Data saved in localStorage.
         <br/>
-        Feel free to get in touch with me or take a look at my projects below.
       </p>
     </div>
   );
